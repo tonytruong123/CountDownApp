@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown Fireworks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+        <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class ="title">
+                <!-- h1 represent section heading-->
+                <h1 style ="color:#474747">Countdown</h1>
+            </div>
+
+            <div class="counter-area">
+                <div class="timer">
+                    <h1 class="count" id="day">00</h1>
+                    <span>days</span>
+                    </div>
+
+                <div class="timer">
+                    <h1 class="count" id="hour">00</h1>
+                    <span>hours</span>
+                    </div>
+
+                <div class="timer">
+                    <h1 class="count" id="minute">00</h1>
+                    <span>minutes</span>
+                    </div>                    
+
+                <div class="timer">
+                    <h1 class="count" id="second">00</h1>
+                    <span>seconds</span>
+                    </div>
+            </div>
+
+            <!--- to set up the choosen time -->
+            <div class="input-area">
+                <input type="datetime-local">
+            </div>
+
+            <!--- where we display our button -->
+            <!-- add disabled if you don't want that button to work yet -->
+            <div class="button-area">
+                <button id="start">Start</button>
+                <button id="reset" disabled>Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="fireworks-container"></div>
+    <script src="fireworks.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

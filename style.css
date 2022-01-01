@@ -1,0 +1,147 @@
+*{
+    margin: 2;
+    padding: 2;
+    font-family: "Garamond";
+}
+
+.container{
+    display: flex;
+    height: 150vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-844297.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        background-image: url("https://images.pexels.com/photos/4195584/pexels-photo-4195584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");     
+    }
+    20%{
+        background-image: url("https://images.pexels.com/photos/364091/pexels-photo-364091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+    40%{
+        background-image: url("https://images.pexels.com/photos/70741/cereals-field-ripe-poppy-70741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+    60%{
+        background-image: url("https://images.pexels.com/photos/3227984/pexels-photo-3227984.jpeg?cs=srgb&dl=pexels-szab%C3%B3-viktor-3227984.jpg&fm=jpg");
+    }
+    80%{
+        background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+    100%{
+        background-image: url("https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+}
+
+
+
+.wrapper{
+    /*padding: set the thickness for the wrapper*/
+    padding: 8rem;
+    display: flex;
+    /*https://developer.mozilla.org/en-US/docs/web/css/flex-direction*/
+    /*flex-direction: set how flex items are placed in the flex container*/
+    flex-direction: column;
+    height: auto;
+    /*flex-basis: sets the initial main size of a flex item*/
+    flex-basis: 520 px;
+    box-shadow: 0 0 3rem silver;
+}
+
+.title{
+    width: 100%;
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+.title h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.counter-area{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.counter-area .timer{
+    margin: 0 0.8rem;
+    display:flex;
+    flex-direction:column;
+    width: 6rem;
+    justify-content: center;
+}
+
+.timer .count{
+    color: #2A363B;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+}
+
+.timer span{
+    color: #355C7D;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.input-area{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.input-area input{
+    padding: 0 1.6rem;
+    height: 3rem;
+    width: 80%;
+    font-size: 1.6rem;
+    color: #2A363B;
+    letter-spacing: 0.1rem;
+    border: 3px solid #5A5050;
+    border-radius: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.button-area{
+    margin: 2.5rem;
+    display: flex;
+    justify-content:center;
+    z-index: 1;
+}
+
+.button-area button{
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 10rem;
+    color: #5A5050;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    
+}
+
+.fireworks-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

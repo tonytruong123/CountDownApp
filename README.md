@@ -1,2 +1,3 @@
-# CountDownApp
-![Picture](https://user-images.githubusercontent.com/96477325/147847672-13d3b8bf-69c2-4a43-984e-47a471c5b523.PNG)
+# CountDownApp with tracking the bitcoin price every second
+
+![CountDown1](https://user-images.githubusercontent.com/96477325/147865059-bf00a20a-61b4-4046-9540-ef6d0727a1ce.PNG)

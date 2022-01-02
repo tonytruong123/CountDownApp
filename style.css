@@ -4,6 +4,14 @@
     font-family: "Garamond";
 }
 
+.info1 {
+    text-align: center;
+}
+
+.info1 .count1{
+    color: #5A5050;
+}
+
 .container{
     display: flex;
     height: 150vh;
@@ -44,7 +52,6 @@
 }
 
 
-
 .wrapper{
     /*padding: set the thickness for the wrapper*/
     padding: 8rem;
@@ -69,7 +76,7 @@
 }
 
 .counter-area{
-    margin: 2rem 0;
+    margin: 0.2rem 0;
     display: flex;
     justify-content: center;
 }

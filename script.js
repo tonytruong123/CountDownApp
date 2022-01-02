@@ -9,6 +9,30 @@ let input = document.querySelector('input');
 let startButton = document.querySelector('#start');
 let resetButton = document.querySelector('#reset');
 
+let pp = document.querySelector('#price');
+let tt = document.querySelector('#time');
+
+const api_url = 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR';
+async function getISS(){
+    const response = await fetch(api_url);
+    const data = await response.json();
+    const {USD} = data;
+
+    pp.textContent = "Price: $ " + USD;
+}
+setInterval(getISS, 1000)
+
+let timeCount1 = function(){
+
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+    tt.innerHTML = "Update at: " + time;
+
+}
+
+setInterval(timeCount1, 1000)
+
 let countDown;
 
 let timeCount = function(val){
@@ -109,3 +133,4 @@ const fireworks = new Fireworks(fireworkContainer, {
 })
 
 fireworks.start()
+
